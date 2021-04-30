@@ -25,7 +25,9 @@ SECRET_KEY = 'el#ir9+gh0l@$)-nayjwp9o&t9rs!&r#80k+brexzy*dzkcj1l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "foodblogtest.herokuapp.com"
+]
 
 
 # Application definition
