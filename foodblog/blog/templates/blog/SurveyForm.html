@@ -1,0 +1,84 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static "blog/css/SurveyFormStyle.css"%}">
+    <script src = "C:\Users\Admin\Documents\DJANGOBlog\foodblog\blog\templates\blog\js\SurveyFormJS.js"> </script>
+</head>
+<body>
+    <div class="intro">
+        <p id="header"> Survey Form <br></p>
+        <p id="greeting"><i> Thank you for taking the time to help us improve the platform </i></p>
+    </div>
+    <div class="formDesign">
+        <form id="survey" onsubmit="submitBtn()">
+            <label for="name"> Name </label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+
+            <label for="email"> Email </label> <br>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+
+            <label for="age"> Age (optional) </label> <br>
+            <input type="number" id="age" name="age" min="1" placeholder="Age"><br><br>
+
+            <label for="currentRole"> Which option best describes your current role? </label> <br>
+            <select id="currentRole" name="currentRole">
+                <option value="selectCurrentRole" selected> Select Current Role </option>
+                <option value="student"> Student </option>
+                <option value="fullTimeJob"> Full Time Job </option>
+                <option value="fullTimeLearner"> Full Time Learner </option>
+                <option value="preferNotToSay"> Prefer Not To Say </option>
+                <option value="other"> Other </option>
+            </select><br><br>
+
+            <label for="recommend"> Would you recommend XYZ to a friend? </label> <br>
+                <input type="radio" id="definitely" name="recommend">
+                <label for="definitely"> Definitely </label> <br>
+                <input type="radio" id="maybe" name="recommend">
+                <label for="maybe"> Maybe </label> <br>
+                <input type="radio" id="notSure" name="recommend">
+                <label for="notSure"> Not Sure </label> <br><br>
+
+            <label for="feature"> What is your favorite feature of XYZ? </label> <br>
+            <select id="feature" name="feature">
+                <option value="selectAnOption" selected> Select An Option </option>
+                <option value="challenges"> Challenges </option>
+                <option value="projects"> Projects </option>
+                <option value="community"> Community </option>
+                <option value="openSource"> Open Source </option>
+            </select><br><br>
+
+            <label for="improve"> What would you like to see improved? (Check all that apply) </label> <br>
+            <input type="checkbox" id="frontEndProjects" name="improve" value="frontEndProjects">
+            <label for="frontEndProjects"> Front-End Projects </label><br>
+            <input type="checkbox" id="backEndProjects" name="improve" value="backEndProjects">
+            <label for="backEndProjects"> Back-End Projects </label><br>
+            <input type="checkbox" id="dataVisualization" name="improve" value="dataVisualization">
+            <label for="dataVisualization"> Data Visualization </label><br>
+            <input type="checkbox" id="challengesImprove" name="improve" value="challengesImprove">
+            <label for="challengesImprove"> Challenges </label><br>
+            <input type="checkbox" id="openSourceCommunity" name="improve" value="openSourceCommunity">
+            <label for="openSourceCommunity"> Open Source Community </label><br>
+            <input type="checkbox" id="gitterHelpRooms" name="improve" value="gitterHelpRooms">
+            <label for="gitterHelpRooms"> Gitter Help Rooms </label><br>
+            <input type="checkbox" id="videos" name="improve" value="videos">
+            <label for="videos"> Videos </label><br>
+            <input type="checkbox" id="cityMeetups" name="improve" value="cityMeetups">
+            <label for="cityMeetups"> City Meetups </label><br>
+            <input type="checkbox" id="wiki" name="improve" value="wiki">
+            <label for="wiki"> Wiki </label><br>
+            <input type="checkbox" id="forum" name="improve" value="forum">
+            <label for="forum"> Forum </label><br>
+            <input type="checkbox" id="additionalCourses" name="improve" value="additionalCourses">
+            <label for="additionalCourses"> Additional Courses </label><br><br>
+
+            <label for="comments"> Any comments or suggestions? </label><br>
+            <textarea name="comments" placeholder="Enter Your Comments Here..." rows="3" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit"> </input>
+
+        </form>
+        </div>
+
+
+</body>
+</html>
