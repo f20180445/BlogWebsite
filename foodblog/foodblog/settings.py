@@ -36,7 +36,6 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "users.apps.UsersConfig",
-    "crispy_forms",
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
