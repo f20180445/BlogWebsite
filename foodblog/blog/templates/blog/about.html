@@ -1,4 +1,12 @@
 {% extends "blog/base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "blog/css/about.css"%}">
+{% endblock css %}
+
+
 {% block content %}
-    <h1> About Page </h1>
+
+    <h1> <u>About Us</u> </h1> <br> <br>
+    <p id="info"> I am an Architect who loves to design vernacular stuff. <br> I have worked with Studio Pomegranate for 18 months,<br> and I'm a B. Arch grad from Rachna Sansad College of Arch.
 {% endblock content %}

@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')) #Mapping the blog app with the blog urls (Whenever someone lands on blog/ urls, control will go to blog.urls)
+    path('', include('blog.urls')), #Mapping the blog app with the blog urls (Whenever someone lands on blog/ urls, control will go to blog.urls)
+    path('register/', include('users.urls'))
 ]
