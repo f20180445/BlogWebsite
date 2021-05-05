@@ -12,4 +12,11 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class Product(models.Model):
+    product_name = models.CharField(max_length=100)
+    product_cost = models.IntegerField(default=0)
+    product_image = models.ImageField(upload_to='images/', default="no image")
+
+    def __str__(self):
+        return self.product_name
 # Create your models here.
